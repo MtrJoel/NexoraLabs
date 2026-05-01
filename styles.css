@@ -9,6 +9,14 @@
       overflow-x: hidden;
     }
 
+    .promo {
+      background: linear-gradient(90deg,#facc15,#fde68a);
+      color: #000;
+      text-align: center;
+      padding: 10px;
+      font-weight: 600;
+    }
+
     .container {
       max-width: 1200px;
       margin: auto;

@@ -9,12 +9,15 @@
 
 </head>
 <body>
+  <div class="promo">
+  🔥 Oferta de apertura termina en: <span id="countdown"></span>
+</div>
 
 <div class="container">
 
 <header class="fade-up">
   <div>
-    <h1>NexoraLabs</h1>
+    <h1>NexoraLabs</h1> 
     <p>Código que transforma. Soluciones que impulsan tu negocio.</p>
     <a href="https://wa.me/18299871645?text=Hola%20quiero%20información%20sobre%20tus%20servicios" class="btn">Contáctame</a>
   </div>
@@ -26,19 +29,19 @@
 <section class="services">
   <div class="card fade-up">
     <h3>Sistemas</h3>
-    <p class="price">$3500</p>
+    <p class="price">DOP 2300</p>
   </div>
   <div class="card fade-up">
     <h3>Páginas Web</h3>
-    <p class="price">Desde $1500</p>
+    <p class="price">Desde DOP 1000</p>
   </div>
   <div class="card fade-up">
     <h3>Mantenimiento</h3>
-    <p class="price">$600/mes</p>
+    <p class="price">DOP 300 / mes</p>
   </div>
   <div class="card fade-up">
     <h3>Mejoras</h3>
-    <p class="price">$700</p>
+    <p class="price">DOP 400</p>
   </div>
 </section>
 
@@ -83,18 +86,6 @@
 </footer>
 
 </div>
-
-<script>
-const elements = document.querySelectorAll('.fade-up');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-  });
-});
-elements.forEach(el => observer.observe(el));
-</script>
-
+<script src="/app.js"></script>
 </body>
 </html>

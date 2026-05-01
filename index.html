@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexoraLabs | Desarrollo de Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<header class="fade-up">
+  <div>
+    <h1>NexoraLabs</h1>
+    <p>Código que transforma. Soluciones que impulsan tu negocio.</p>
+    <a href="https://wa.me/18299871645?text=Hola%20quiero%20información%20sobre%20tus%20servicios" class="btn">Contáctame</a>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="hero-img">
+  </div>
+</header>
+
+<section class="services">
+  <div class="card fade-up">
+    <h3>Sistemas</h3>
+    <p class="price">$3500</p>
+  </div>
+  <div class="card fade-up">
+    <h3>Páginas Web</h3>
+    <p class="price">Desde $1500</p>
+  </div>
+  <div class="card fade-up">
+    <h3>Mantenimiento</h3>
+    <p class="price">$600/mes</p>
+  </div>
+  <div class="card fade-up">
+    <h3>Mejoras</h3>
+    <p class="price">$700</p>
+  </div>
+</section>
+
+<section class="split fade-up">
+  <div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+  </div>
+  <div>
+    <h2>Impulsa tu negocio con tecnología</h2>
+    <p>Desarrollamos soluciones que automatizan procesos y aumentan tus ingresos.</p>
+  </div>
+</section>
+
+<section class="split fade-up">
+  <div>
+    <h2>Sobre Nosotros</h2>
+    <p>En NexoraLabs somos un equipo de jóvenes desarrolladores, estudiantes de ingeniería en software, unidos por una misma pasión: la tecnología.</p>
+    <p>Creemos en el poder de las ideas y en cómo el software puede transformarlas en soluciones reales. Nuestro enfoque está en ayudar a emprendedores y negocios a crecer, automatizar y evolucionar mediante herramientas digitales hechas a medida.</p>
+    <p>No solo desarrollamos sistemas… construimos oportunidades.</p>
+  </div>
+  <div>
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c">
+  </div>
+</section>
+
+<section class="process fade-up">
+  <h2>Cómo trabajamos</h2>
+  <div class="steps">
+    <div class="step"><span>1️⃣</span><p>Análisis</p></div>
+    <div class="step"><span>2️⃣</span><p>Diseño</p></div>
+    <div class="step"><span>3️⃣</span><p>Desarrollo</p></div>
+  </div>
+</section>
+
+<section class="contact fade-up">
+  <h2>¿Listo para empezar?</h2>
+  <a href="https://wa.me/18299871645?text=Hola%20quiero%20información%20sobre%20tus%20servicios" class="btn">Escríbeme</a>
+</section>
+
+<footer>
+  <p>© NexoraLabs 2026</p>
+</footer>
+
+</div>
+
+<script>
+const elements = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
